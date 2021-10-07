@@ -20,7 +20,7 @@ function App() {
       {/* Timeout is the time between 'entering' and 'entered', 'exiting' and 'exited'. It can be just a number,
       same like the time mentioned in CSS animation. If you want to add define different timings for entering and 
       exiting, then create an object like above 'animationTiming'. Lifecycle hooks like onEnter, onEntering etc are
-      also attached to this, which we can use for customization */}
+      also attached to this, which we can use for customization. */}
       {/* Method 1: */}
       {/* <Transition
         in={modalOpen}
