@@ -29,7 +29,7 @@
     transform: translateY(-100%); */
 
     /* When used with keyframes */
-    animation: closeModal 0.3s ease-out forwards;
+    animation: closeModal 1s ease-out forwards;
 }
 
 /* For detailed step wise animation */
@@ -67,3 +67,23 @@
 {modalOpen && <Modal isOpen={modalOpen} closed={onCloseHandler} />}
 This is because React instantly removes the component from the app and hence the animation is not seen when closing the modal.
 This is a limitation, and hence we can apply React transitions instead. */
+
+/* React Transition Group
+npm install react-transition-group --save
+https://reactcommunity.org/react-transition-group/transition
+*/
+
+
+/* In case of CSSTransition component */
+.fade-slide-enter {
+
+}
+.fade-slide-enter-active {
+    animation: openModal 0.3s ease-out forwards;
+}
+.fade-slide-exit {
+
+}
+.fade-slide-exit-active {
+    animation: closeModal 1s ease-out forwards;
+}
